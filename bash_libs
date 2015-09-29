@@ -1,5 +1,0 @@
-umask 2
-module use /data003/GIF/software/modules
-module load parallel
-module load bioawk
-#eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
