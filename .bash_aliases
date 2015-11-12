@@ -1,5 +1,6 @@
 # Alias definitions.
 alias grep='grep --color=auto'
+alias pwd='pwd -P'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias ls='ls --color=auto -v'
