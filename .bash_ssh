@@ -11,4 +11,4 @@ alias arun="ssh -l -X arnstrm dellhome.biotech.iastate.edu"
 alias bigram="ssh -l -X arnstrm bigram.ent.iastate.edu"
 alias biocrunch="ssh -X -l arnstrm biocrunch.ent.iastate.edu"
 alias WWW="ssh -l -X arnstrm  hpc02.ait.iastate.edu"
-alias bridges="ssh -X -l aseethar bridges.psc.edu
+alias bridges="ssh -X -l aseethar bridges.psc.edu"
