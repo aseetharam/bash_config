@@ -1,4 +1,3 @@
-# Alias definitions.
 alias grep='grep --color=auto'
 alias pwd='pwd -P'
 alias fgrep='fgrep --color=auto'
@@ -26,6 +25,8 @@ alias git-commit-count="git log --pretty=format:'' | wc -l"
 alias pep8="pep8 --ignore=E501 -r"
 alias qr="qstat -r"
 alias qs="qstat -a"
+alias ss="squeue -a"
+alias ssa="squeue -u arnstrm"
 alias qra=" qstat -a |grep "arnstrm" |grep -w "R" |nl"
 alias qsa=" qstat -a |grep "arnstrm" |grep -w "[QRH]" |nl"
 alias dirtree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
