@@ -1,39 +1,6 @@
-#export MDIR=/data003/GIF/software/modules
-#export PDIR=/data003/GIF/software/packages
-#export GSEQ=/data003/GIF/genomes/sequences
-#export GMOD=/data003/GIF/genomes/modules
-
+PATH=$PATH:$HOME/bin
 export EDITOR="nano"
 export TMOUT=0
-#export LD_PRELOAD=/shared/openmpi/gcc/lib/libmpi.so
-#export P1=/home/arnstrm/arnstrm/20140206_Hufford_teosinte_first
-#export P2=/home/arnstrm/arnstrm/20140221_Purcell_Serioala_Annotation
-#export P3=/home/arnstrm/arnstrm/20140710_Hufford_teosinte_TIL01
-#export p3=/home/arnstrm/arnstrm/20140304_Hufford_teosinte_TIL01
-#export P4=/home/arnstrm/arnstrm/20140710_Hufford_teosinte_TIL11
-#export p4=/home/arnstrm/arnstrm/20140304_Hufford_teosinte_TIL11
-#export P5=/home/arnstrm/arnstrm/20140304_Hufford_teosinte_trinity
-#export P6=/home/arnstrm/arnstrm/20140625_severin_bioblitz
-#export P7=/home/arnstrm/arnstrm/20140805_Arun_Streptochaeta_assembly
-#export P8=/home/arnstrm/arnstrm/20140718_Self_fastq_bias
-#export P9=/home/arnstrm/arnstrm/20140721_Purcell_maker_pipeline
-#export P10=/home/arnstrm/arnstrm/20140509_Graham_soybean_selection
-#export P11=/home/arnstrm/arnstrm/20141114_Bhattacharyya_Psojae_RNAseq
-#export P12=/home/arnstrm/arnstrm/20141120_Reddy_metagenomics
-#export P13=/home/arnstrm/arnstrm/20141208_Hufford_zea_CML247
-#export P12=/home/arnstrm/arnstrm/20141208_Trimarchi_singlecell_transcriptome
-#export P14=/home/arnstrm/arnstrm/20150122_Rothschild_Shrimp_genome
-
-#export WISECONFIGDIR=/data004/software/GIF/packages/genewise/2.4.1b/wisecfg
-#export SMRT_ROOT=/data004/software/GIF/packages/SMRT/2.2.0
-#PATH=$PATH:/data003/GIF/software/bin
-#PATH=$PATH:/home/arnstrm/bin
-#PATH=$PATH:/home/arnstrm/coreutils/bin
-#PATH=$PATH:/home/arnstrm/dos2unix/bin
-PATH=$PATH:/home/arnstrm/github/common_analyses
-PATH=$PATH:/home/arnstrm/github/common_scripts
-#LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64/libibverbs.so.1
-#LIBRARY_PATH=$LIBRARY_PATH:/usr/lib64
-#PATH=$PATH:/home/arnstrm/fasta_utilities/scripts
-#PERL5LIB=$PERL5LIB:/home/arnstrm/fasta_utilities
-#PATH=$PATH:/home/arnstrm/gatk_scripts
+# locations for the below two depends on what clusters you use
+#export MDIR=/data003/GIF/software/modules
+#export PDIR=/data003/GIF/software/packages
