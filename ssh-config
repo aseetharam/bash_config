@@ -1,0 +1,87 @@
+Host nova
+    HostName nova.its.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host condo
+    HostName condo2017.its.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host ceres
+    HostName login.scinet.science
+    User arun.somwarpet-seetharam
+    ForwardAgent yes
+    ForwardX11 yes
+    ServerAliveInterval 300
+    ServerAliveCountMax 2
+
+Host gif
+    HostName gif-server.biotech.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host gifnas
+    HostName gifnas.biotech.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+
+Host carbonate
+    HostName carbonate.uits.iu.edu
+    User aseethar
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host xsede
+    HostName login.xsede.org
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host novadtn
+    HostName novadtn.its.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host condodtn
+    HostName condodtn.its.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host bridges
+    HostName bridges.psc.edu
+    User aseethar
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host biocrunch
+    HostName biocrunch.ent.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host bigram
+    HostName bigram.ent.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host lightning
+    HostName lightning3.its.iastate.edu
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
+Host blacklight
+    HostName tg-login1.blacklight.psc.teragrid.org
+    User arnstrm
+    ForwardAgent yes
+    ForwardX11 yes
+
