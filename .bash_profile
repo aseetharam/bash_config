@@ -255,21 +255,20 @@ function grep() {
     fi
 }
 
-#function save_last_command () {
-#        # Only want to do this once per process
-#        if [ -z "$SAVE_LAST" ]; then
-#            EOS=" # end session $USER@${HOSTNAME}:`tty`"
-#            export SAVE_LAST="done"
-#            if type _loghistory >/dev/null 2>&1; then
-#                _loghistory
-#                _loghistory -c "$EOS"
-#            else
-#                history -a
-#            fi
-#            /bin/echo -e "#`date +%s`\n$EOS" >> ${HISTFILE}
-#        fi
-#    }
-#    trap 'save_last_command' EXIT#
-#
-#  # END History manipulation section
-#  ##################################
+# Delimited-data files: no empty columns please
+function columnit { column -t $1 | less -S; } 
+function tabit { column -t -s $'\t' $1 | less -S; }
+
+#  Delimited-data files: empty columns values are nasty
+function columnit-empty { cat $1 | sed -E 's_'$'\t'$'\t''_'$'\t''NA'$'\t''_g' | column -t | less -S; }
+function tabit-empty { cat $1 | sed -E 's_'$'\t'$'\t''_'$'\t''NA'$'\t''_g' | column -t -s $'\t' | less -S; }
+
+# Show me the money grep, now
+function grep-nobuff { gstdbuf -o0 grep $@; }
+
+# For Picard metric files
+function looksee { head -8 $1 | tail -2 | column -t | less -S; } # single row
+function looksee2 { tail +7 $1 | column -t | less -S; } # multi-row
+
+# See some progress taring up your data
+function tarball { tar cf - $1 -P | pv -s $(($(du -sk $1 | awk '{print $1}') * 1024)) | gzip > $2; }
